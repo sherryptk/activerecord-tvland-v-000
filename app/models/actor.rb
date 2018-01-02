@@ -1,3 +1,3 @@
 class Actor < ActiveRecord::Base
-  has_many :charcters
+  has_many :characters
 end
