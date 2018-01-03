@@ -7,8 +7,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters.zip(self.show).collect do |character, show|
-    "#{character} - #{show}"
+    self.characters.collect do |character|
+    "#{character.name} - #{character.show}"
   end
   end
 end
